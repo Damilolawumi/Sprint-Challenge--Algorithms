@@ -13,7 +13,9 @@ mine
 -. repeat
 '''
 def count_th(word):
-    
+    # if initial word is less than 2 words, return 0
+    # because it won't be possible for the word
+    # to be "th"
     if len(word) < 2:
         return 0
     
