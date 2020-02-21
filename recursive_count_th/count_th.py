@@ -7,10 +7,9 @@ mine
 
 - check if word is less than 2
 - if it doesn't exist end program
--. compare letters in word two at a time to see if it satifies condition
--. if step two returns True add + 1 else count + 0
--. remove one letter at a time from word
--. repeat
+- compare letters in word two at a time to see if it satifies condition
+- if step two returns True add + 1 
+
 '''
 def count_th(word):
     # if initial word is less than 2 words, return 0

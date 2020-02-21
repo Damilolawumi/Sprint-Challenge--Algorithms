@@ -97,8 +97,9 @@ class SortingRobot:
         Sort the robot's list.
         """
          # Fill this out
-        self.set_light_on()  # initalize the robots memory with light
+        self.set_light_on()  # initalize the bot memory with light
         while self.light_is_on() == True:
+
             self.set_light_off()  # reset & end inital while loop
             # move as far right as possible
             while self.can_move_right() == True:
