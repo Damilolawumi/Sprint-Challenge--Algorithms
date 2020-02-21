@@ -96,7 +96,29 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
-        # Fill this out
+        if not self.can_move_right() and not self.set_light_on():
+
+            return 
+
+        else:
+            #so if light switch is on, it indicates player can move
+            self.set_light_on()
+            self.swap_item()
+            #then player compares held item with next item 
+            while self.can_move_right():
+                self.move_right()
+                self.compare_item()
+                if self.compare_item() == 1:
+                    self.swap_item()
+            while self.compare_item() is not None:
+                self.set_light_off()
+                self.move_left()
+                
+            self.swap_item()
+            self.move_right()
+            print(self._time)
+            return self.sort()
+
         pass
 
 
